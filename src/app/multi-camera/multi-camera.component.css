@@ -1,0 +1,7 @@
+.streaming-video{
+  transform: scaleX(-1);  
+}
+.select-align{
+  width: 530px;
+  height: 25px;
+}

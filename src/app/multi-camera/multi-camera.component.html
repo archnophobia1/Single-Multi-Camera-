@@ -1,0 +1,10 @@
+<pre></pre>
+<select class="select-align" id="activeVideoSource" name="activeVideoSource" [(ngModel)]="activeVideoSource"
+(change)="videoSourceChange($event.target.value)">
+  <option *ngFor="let item of mediaDeviceList; let i = index;" [value]="item.deviceId"> 
+    <span *ngIf="item.label"> {{item.label}} </span>
+    <span *ngIf="!item.label"> Camera {{i}} </span>
+  </option>
+</select>  
+<pre></pre>
+<video #video  [width]="videoWidth" [height]="videoHeight"></video>

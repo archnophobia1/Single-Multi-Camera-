@@ -1,0 +1,10 @@
+
+<button (click)="onBtnSingle();" style="margin-right: 10px">Single</button>
+<button (click)="onBtnMulti();" style="margin-right: 10px">Multiple</button>
+<button (click)="onBtnEndo();" style="margin-right: 10px">Endo</button>
+<button (click)="onResetCam();">Reset Camera</button>
+
+<clear-camera *ngIf="isResetcam"></clear-camera>
+<single-camera *ngIf="isSingle"></single-camera>
+<multi-camera *ngIf="isMulti"></multi-camera>
+<endo-camera *ngIf="isEndo"></endo-camera>
